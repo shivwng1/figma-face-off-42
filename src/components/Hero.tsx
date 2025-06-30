@@ -6,25 +6,48 @@ const Hero = () => {
     <section className="ml-4 mt-[19px] max-md:max-w-full">
       <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
         <div className="w-6/12 max-md:w-full max-md:ml-0">
-          <div className="flex mr-[-118px] w-full flex-col self-stretch items-stretch text-base font-normal justify-center my-auto max-md:max-w-full max-md:mt-10">
-            <div className="flex items-center gap-2.5 text-white uppercase leading-[1.3]">
-              <div className="self-stretch bg-[rgba(255,255,255,0.02)] border min-h-[47px] gap-[18px] my-auto px-[19px] py-[13px] rounded-[130px] border-[rgba(255,255,255,0.1)] border-solid">
-                Start Building
-              </div>
-              <div className="self-stretch bg-[rgba(255,255,255,0.02)] border min-h-[47px] gap-[18px] whitespace-nowrap my-auto px-[19px] py-[13px] rounded-[130px] border-[rgba(255,255,255,0.1)] border-solid">
-                Docs
+          <div className="flex mr-[-118px] w-full flex-col self-stretch items-center text-center justify-center my-auto max-md:max-w-full max-md:mt-10 max-md:items-center">
+            <div className="flex items-center justify-center gap-2.5 text-white uppercase leading-[1.3]">
+              <div className="bg-[rgba(255,255,255,0.02)] border min-h-[47px] gap-[18px] px-[19px] py-[13px] rounded-[130px] border-[rgba(255,255,255,0.1)] border-solid text-sm">
+                3X Your BPO Capacity While Cutting Costs 40%
               </div>
             </div>
             <h1 className="text-[rgba(247,247,247,1)] text-[75px] leading-[85px] mt-[30px] max-md:max-w-full max-md:text-[40px] max-md:leading-[50px]">
-              Realtime voice, video, &{" "}
-              <span className="font-medium">AI at global scale</span>
+              Scale Your BPO The Smart Way:{" "}
+              <span className="font-medium">AI Agents + Human Intelligence</span>
             </h1>
             <p className="text-[rgba(206,206,207,1)] text-lg font-light leading-7 mt-[30px] max-md:max-w-full">
-              Build ultra low latency conversations. Global WebRTC
-              infrastructure and enterprise reliability since 2016. Avishkar AI
-              is the team behind Pipecat, the 100% open source framework
-              for conversational AI.
+              Deploy specialized AI agents across voice, chat, and WhatsApp. White-label ready. Enterprise-grade. Built for Indian BPOs.
             </p>
+            
+            {/* Hero Features Grid */}
+            <div className="grid grid-cols-2 gap-4 mt-[30px] text-[rgba(206,206,207,1)] text-sm max-md:grid-cols-1">
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                Specialized AI Agents
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                Multi-Channel Deployment
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                White-Label Ready
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                21-Day Implementation
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                CRM Integration
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                99.9% Uptime SLA
+              </div>
+            </div>
+
             <button className="bg-white flex min-h-[57px] items-center gap-[25px] capitalize leading-loose justify-center mt-[30px] pl-[25px] pr-[9px] py-[9px] rounded-[55px] max-md:pl-5 hover:opacity-90 transition-opacity">
               <div className="bg-clip-text bg-[linear-gradient(45deg,#0B0C0D_0%,#1C1E21_100%)] self-stretch my-auto">
                 Talk to us
@@ -50,3 +73,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

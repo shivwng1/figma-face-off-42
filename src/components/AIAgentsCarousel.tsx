@@ -6,9 +6,9 @@ const AIAgentsCarousel = () => {
   const agents = [
     {
       title: "Telehealth AI Agent",
-      description: "Compassionate healthcare AI that handles appointment scheduling, patient triage, and care coordination with medical accuracy and HIPAA compliance.",
+      description: "Compassionate healthcare AI that handles appointment scheduling, patient triage, and care coordination with medical accuracy and compliance.",
       features: [
-        "HIPAA-compliant conversations",
+        "Secure patient conversations",
         "Symptom assessment protocols", 
         "Appointment management",
         "Care follow-up automation"
@@ -62,7 +62,7 @@ const AIAgentsCarousel = () => {
   ];
 
   return (
-    <section className="relative z-10 flex mt-[-259px] w-full max-w-[1240px] flex-col items-stretch max-md:max-w-full max-md:mt-[-200px]">
+    <section id="ai-agents" className="relative z-10 flex mt-[-259px] w-full max-w-[1240px] flex-col items-stretch max-md:max-w-full max-md:mt-[-200px]">
       <div className="self-center flex w-[1056px] max-w-full flex-col items-stretch text-center">
         <h2 className="text-white text-[65px] font-normal leading-none tracking-[-1.3px] max-md:max-w-full max-md:text-[40px]">
           AI Agent Specialists
@@ -82,8 +82,9 @@ const AIAgentsCarousel = () => {
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src={agent.image}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                       alt={agent.title}
+                      style={{ objectPosition: 'center 20%' }}
                     />
                   </div>
                   <div className="p-6">
@@ -123,3 +124,4 @@ const AIAgentsCarousel = () => {
 };
 
 export default AIAgentsCarousel;
+

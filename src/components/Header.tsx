@@ -2,6 +2,13 @@
 import React from 'react';
 
 const Header = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="relative flex w-full flex-col items-stretch pl-20 max-md:max-w-full max-md:pl-5">
       <nav className="bg-[rgba(255,255,255,0.02)] border self-center flex min-h-[90px] w-full max-w-[1273px] flex-col justify-center p-[17px] rounded-[130px] border-[rgba(255,255,255,0.1)] border-solid max-md:max-w-full">
@@ -15,11 +22,11 @@ const Header = () => {
             <div className="text-white text-2xl font-medium">Avishkar AI</div>
           </div>
           <div className="self-stretch flex min-w-60 gap-[22px] text-base text-white font-normal whitespace-nowrap leading-loose flex-wrap my-auto max-md:max-w-full">
-            <div className="p-4">Platform</div>
-            <div className="self-stretch gap-2.5 p-4">Docs</div>
-            <div className="self-stretch gap-2.5 p-4">Customers</div>
-            <div className="self-stretch gap-2.5 p-4">Pricing</div>
-            <div className="self-stretch gap-2.5 p-4">More</div>
+            <button onClick={() => scrollToSection('ai-agents')} className="p-4 hover:opacity-80 transition-opacity">AI Agents</button>
+            <button onClick={() => scrollToSection('voice-os')} className="self-stretch gap-2.5 p-4 hover:opacity-80 transition-opacity">Voice OS</button>
+            <button onClick={() => scrollToSection('integrations')} className="self-stretch gap-2.5 p-4 hover:opacity-80 transition-opacity">Integrations</button>
+            <button onClick={() => scrollToSection('pricing')} className="self-stretch gap-2.5 p-4 hover:opacity-80 transition-opacity">Pricing</button>
+            <button onClick={() => scrollToSection('faq')} className="self-stretch gap-2.5 p-4 hover:opacity-80 transition-opacity">FAQ</button>
           </div>
           <button className="bg-white self-stretch flex min-h-[57px] items-center gap-[25px] text-base font-normal capitalize leading-loose justify-center my-auto pl-[25px] pr-2 py-[9px] rounded-[55px] max-md:pl-5 hover:opacity-90 transition-opacity">
             <div className="bg-clip-text bg-[linear-gradient(45deg,#0B0C0D_0%,#1C1E21_100%)] self-stretch my-auto">
@@ -38,3 +45,4 @@ const Header = () => {
 };
 
 export default Header;
+

@@ -6,42 +6,45 @@ const RealTimeOS = () => {
 
   const features = [
     {
-      title: "Real-Time Video & Audio SDKs",
-      description: "One API to build, launch, and scale video, audio, and voice AI applications — from customer support to collaboration. Everything you need, in one powerful platform.",
+      title: "Telephony via SIP Trunking",
+      description: "Connect to providers like RingCentral, NICE, and others using elastic SIP. Flexible, carrier-agnostic setup for fast deployment.",
       image: "https://cdn.builder.io/api/v1/image/assets/a779a9e19efc4dadbbc0b4313fcda8ab/525a9eabf9664d2d118296dfcecc63b08d724bec?placeholderIfAbsent=true"
     },
     {
-      title: "Customizable UI & Layouts",
-      description: "Design beautiful, responsive interfaces with our pre-built components and flexible styling system. Create unique experiences that match your brand.",
+      title: "Custom Actions",
+      description: "Voice agents can send SMS, track orders, and create tickets — automating tasks so your team can focus on what matters.",
       image: "https://cdn.builder.io/api/v1/image/assets/a779a9e19efc4dadbbc0b4313fcda8ab/fbf12fae90ed6cba55bba555e16bf2fe6f1a6b76?placeholderIfAbsent=true"
     },
     {
-      title: "AI-Ready Infrastructure",
-      description: "Built-in AI capabilities for voice recognition, natural language processing, and intelligent routing. Deploy AI agents seamlessly.",
+      title: "Custom Workflows",
+      description: "Automate full call flows with actions like booking, transfers, and escalation — all fully configurable to match your logic.",
       image: "https://cdn.builder.io/api/v1/image/assets/a779a9e19efc4dadbbc0b4313fcda8ab/90dde32f73505cec78c6ac3634a3d2d912695788?placeholderIfAbsent=true"
     },
     {
-      title: "Global Media Routing",
-      description: "Intelligent routing ensures optimal performance worldwide. Low-latency connections with automatic failover and quality optimization.",
+      title: "No-Code Flow Designer",
+      description: "Visually build conversations and logic-based flows without writing a single line of code. No dev team required.",
       image: "https://cdn.builder.io/api/v1/image/assets/a779a9e19efc4dadbbc0b4313fcda8ab/50c30923087ed6be993e7caa3d29188550e6ec7f?placeholderIfAbsent=true"
     },
     {
-      title: "Multilingual Voice & Video Agents",
-      description: "Support for 50+ languages with real-time translation. Cultural awareness and region-specific optimizations included.",
+      title: "Ready-Made AI Agent Templates",
+      description: "Choose from prebuilt agents for sales, support, and scheduling. Launch fast and start seeing results right away.",
       image: "https://cdn.builder.io/api/v1/image/assets/a779a9e19efc4dadbbc0b4313fcda8ab/2e76ff5f87d02eca20167c0719250cb1fa3af40c?placeholderIfAbsent=true"
+    },
+    {
+      title: "Multilingual Agents",
+      description: "Deploy voice agents in 15+ languages. Manage global conversations without duplicating flows or content.",
+      image: "https://cdn.builder.io/api/v1/image/assets/a779a9e19efc4dadbbc0b4313fcda8ab/d8cec3d1bdb805b099a4c37f673bf6f19389e9f9?placeholderIfAbsent=true"
     }
   ];
 
   return (
-    <section className="relative flex items-center gap-[30px] flex-wrap mt-[130px] max-md:max-w-full max-md:mt-10">
+    <section id="voice-os" className="relative flex items-center gap-[30px] flex-wrap mt-[130px] max-md:max-w-full max-md:mt-10">
       <div className="self-stretch flex min-w-60 min-h-[770px] flex-col items-stretch justify-between w-[610px] my-auto max-md:max-w-full">
         <h2 className="text-white text-[65px] font-normal leading-[75px] tracking-[-1.3px] max-md:max-w-full max-md:text-[40px] max-md:leading-[51px]">
-          Complete Real-Time OS for Global Teams
+          Complete AI Voice OS for Enterprise Teams
         </h2>
         <p className="text-[rgba(206,206,207,1)] text-lg font-light leading-7 mt-[34px] max-md:max-w-full">
-          One API to build, launch, and scale video, audio, and voice AI
-          applications — from customer support to collaboration. Everything
-          you need, in one powerful platform.
+          One platform to automate, manage, and scale every phone conversation — from routing to resolution. Everything you need to build, launch, and run voice AI agents in one unified tool.
         </p>
         <div className="w-full mt-[34px] max-md:max-w-full">
           <div className="w-full max-md:max-w-full">
@@ -86,7 +89,7 @@ const RealTimeOS = () => {
             <img
               src={features[activeFeature].image}
               className="absolute h-full w-full object-cover inset-0 rounded-[40px] transition-all duration-500"
-              alt="Real-time OS illustration"
+              alt="Voice OS illustration"
             />
             <div className="relative bg-[rgba(91,13,213,1)] flex mb-[-74px] w-[54px] shrink-0 h-[54px] rounded-[10px] max-md:mb-2.5" />
           </div>
@@ -97,3 +100,4 @@ const RealTimeOS = () => {
 };
 
 export default RealTimeOS;
+
