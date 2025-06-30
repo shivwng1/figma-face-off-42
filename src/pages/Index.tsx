@@ -27,10 +27,12 @@ const Index = () => {
         
         <Header />
         <Hero />
-        <CompanyLogos />
+        <div className="relative w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+          <CompanyLogos />
+        </div>
       </div>
       
-      <main className="relative z-10 flex w-full max-w-[1240px] flex-col items-center">
+      <main className="relative z-10 flex w-full max-w-[1240px] flex-col items-center px-4 sm:px-6 lg:px-8">
         <AIAgentsCarousel />
         <RealTimeOS />
         <ToolsIntegration />

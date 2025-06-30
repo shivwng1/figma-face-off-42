@@ -3,29 +3,29 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="ml-4 mt-[19px] max-md:ml-0 max-md:px-4">
+    <section className="relative w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 mt-[19px]">
       <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
         <div className="w-6/12 max-md:w-full max-md:ml-0">
-          <div className="flex mr-[-118px] w-full flex-col self-stretch items-center text-center justify-center my-auto max-md:mr-0 max-md:max-w-full max-md:mt-10 max-md:items-center">
+          <div className="flex w-full flex-col items-center text-center justify-center my-auto max-md:mt-10">
             
             {/* Main headline - largest text */}
-            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mt-4 max-md:text-3xl max-md:leading-tight">
+            <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mt-4 max-md:text-3xl max-md:leading-tight">
               3X Your BPO Capacity While Cutting Costs 40%
             </h1>
             
             {/* Secondary headline */}
-            <h2 className="text-[rgba(247,247,247,1)] text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight mt-6 max-md:text-xl max-md:leading-tight">
+            <h2 className="text-[rgba(247,247,247,1)] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight mt-6 max-md:text-lg max-md:leading-tight">
               Scale Your BPO The Smart Way:{" "}
               <span className="font-medium">AI Agents + Human Intelligence</span>
             </h2>
             
             {/* Description */}
-            <p className="text-[rgba(206,206,207,1)] text-base md:text-lg font-light leading-6 md:leading-7 mt-6 max-w-4xl max-md:text-sm max-md:leading-6">
+            <p className="text-[rgba(206,206,207,1)] text-sm sm:text-base md:text-lg font-light leading-6 md:leading-7 mt-6 max-w-4xl max-md:text-sm max-md:leading-6">
               Deploy specialized AI agents across voice, chat, and WhatsApp. White-label ready. Enterprise-grade. Built for Indian BPOs.
             </p>
             
             {/* Hero Features Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mt-6 text-[rgba(206,206,207,1)] text-sm md:text-base max-w-2xl w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mt-6 text-[rgba(206,206,207,1)] text-xs sm:text-sm md:text-base max-w-2xl w-full">
               <div className="flex items-center gap-2 justify-center sm:justify-start">
                 <span className="text-green-400">✓</span>
                 Specialized AI Agents
