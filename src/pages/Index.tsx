@@ -1,8 +1,9 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import CompanyLogos from '@/components/CompanyLogos';
-import AIAgents from '@/components/AIAgents';
+import AIAgentsCarousel from '@/components/AIAgentsCarousel';
 import RealTimeOS from '@/components/RealTimeOS';
 import ToolsIntegration from '@/components/ToolsIntegration';
 import FAQ from '@/components/FAQ';
@@ -10,7 +11,7 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="flex flex-col relative min-h-[5296px] overflow-hidden items-center">
+    <div className="flex flex-col relative min-h-[5296px] overflow-hidden items-center font-sans">
       <img
         src="https://cdn.builder.io/api/v1/image/assets/a779a9e19efc4dadbbc0b4313fcda8ab/e8ef77f3adae2482ac4e5f3b3ca7a33d33ab6ba6?placeholderIfAbsent=true"
         className="absolute h-full w-full object-cover inset-0"
@@ -30,7 +31,7 @@ const Index = () => {
       </div>
       
       <main className="relative z-10 flex w-full max-w-[1240px] flex-col items-center">
-        <AIAgents />
+        <AIAgentsCarousel />
         <RealTimeOS />
         <ToolsIntegration />
         <FAQ />
